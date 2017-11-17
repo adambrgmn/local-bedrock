@@ -1,0 +1,21 @@
+language: php
+php:
+  - '7.1'
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y ncftp
+  - nvm install node
+
+install:
+  - composer install
+  - npm install
+
+script: ./scripts/test.sh
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: ./scripts/deploy.js
+  on:
+    branch: master
