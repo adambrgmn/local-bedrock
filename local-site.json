@@ -1,0 +1,20 @@
+{
+  "id": "SySZFX2yM",
+  "path": "~/Local Sites/local-bedrock",
+  "localVersion": "2.1.1",
+  "devMode": true,
+  "container":
+    "c6afa83d20bb6a1acb0fc7a3da3b8b4764a8a01b3d937e2337362fe8ee2d243b",
+  "phpVersion": "7.1.4",
+  "webServer": "nginx",
+  "mysqlVersion": "5.5",
+  "multiSite": null,
+  "mysql": { "database": "local", "user": "root", "password": "root" },
+  "ports": { "HTTP": 4004, "HTTPS": 4005, "MYSQL": 4006, "MAILCATCHER": 4007 },
+  "flywheelConnect": null,
+  "name": "local-bedrock",
+  "domain": "local-bedrock.local",
+  "environment": "custom",
+  "environmentVersion": "1.2",
+  "sslSHA1": "E302667085E1C22B7321A5EC626C1807A5BF4A1B"
+}
