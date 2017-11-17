@@ -9,18 +9,18 @@ A template to work with [Roots Bedrock](https://roots.io/bedrock/) and
 1. Clone this repo (and remove unnecessary files): `git clone --depth=1
    https://github.com/adambrgmn/local-bedrock && rm -rf local-bedrock/.git
    local-bedrock/README.md local-bedrock/.gitignore`
-1. Copy `.env.example` to `.env`: `cp local-bedrock/app/public/.env.example
-   local-bedrock/app/public/.env`
-1. Update `WP_HOME` to match your new site name
-1. Generate new salts at
-   [https://roots.io/salts.html](https://roots.io/salts.html)
 1. Zip the directory: `cd local-bedrock && zip -r ../local-bedrock.zip . * && cd
    ..`
 1. Drag and drop `local-bedrock.zip` onto the Local by Flywheel app
 1. Enter details for new site (Make sure to select a **Custom environment**
    together with **nginx**)
-1. Go to your newly created site and the `public`-directory and run `composer
-   install`
+1. Open your newly created site in the Terminal and navigate to the `public`-folder
+1. Copy `.env.example` to `.env`: `cp .env.example .env`
+  1. Update `WP_HOME` to match your new site name
+  1. Generate new salts at
+    [https://roots.io/salts.html](https://roots.io/salts.html)
+1. Run `composer install`
+1. Update your sites name inside `conf/nginx/site.conf`
 
 That should give you a fully working WordPress site backed by Bedrock and Local
 by Flywheel
